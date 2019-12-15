@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 450px;
+    opacity: 0.9;
+    background: url("img/header-bg.jpg") 0 0 transparent fixed;
+    background-size: 100vw;
+    padding: 2.6rem 5rem;
+
+    position: relative;
+}
+
+header::after {
+    background-image: linear-gradient(-53.0deg, #694727 13%, #ffae35 86%);
+    opacity: .9;
+    content: "";
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #494633;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+p {
+    color: white;
+}
+
+section {
+    background-color: #fff4d1;
+    padding: 50px;
+}
+
+.figure-container {
+    display: flex;
+    flex-flow: wrap;
+
+    margin-top: 50px;
+}
+
+figure {
+    width: 33.3%;
+    padding: 10px;
+
+    position: relative;
+}
+
+figure img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 20px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.ava {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.large {
+    width: 150px;
+}
+
+.username {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: #fffd7a;
+    margin-top: 10px;
+}
