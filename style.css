@@ -1,6 +1,10 @@
+html {
+    font-size: 14px;
+    min-width: 800px;
+}
+
 body {
     margin: 0;
-    min-width: 800px;
 }
 
 header {
@@ -12,7 +16,7 @@ header {
     height: 450px;
     opacity: .9;
     background: url("img/header-bg.jpg") 0 0 transparent fixed;
-    background-size: 100vw;
+    background-size: 100%;
     padding: 2.6rem 5rem;
 
     position: relative;
@@ -42,14 +46,15 @@ footer {
     opacity: .9;
     background: url("img/footer-bg.jpg") 0 0 transparent fixed;
     background-position: bottom;
-    background-size: 100vw;
+    background-size: 100%;
     padding: 2.6rem 5rem;
 
     position: relative;
 }
 
 footer:after {
-    background-image: linear-gradient(-53.0deg, #251810 13%, #523b0d 86%);
+    background-image: linear-gradient(-53.0deg, #000000 13%, #1d1711 86%);
+    opacity: .9;
 }
 
 h1 {
@@ -57,13 +62,11 @@ h1 {
     font-size: 3.5rem;
     font-family: 'Roboto', sans-serif;
     margin-top: 10px;
-    font-weight: bolder;
 }
 
 h2 {
     color: #494633;
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
     text-align: center;
     font-size: 2.3rem;
 }
@@ -148,10 +151,12 @@ figure:hover img {
 .ava {
     border-radius: 50%;
     width: 50px;
+    height: 50px;
 }
 
 .large {
     width: 150px;
+    height: 150px;
 }
 
 .username {
@@ -167,7 +172,7 @@ figure:hover img {
 
 .social {
     display: flex;
-    justify-content: right;
+    flex-direction: row-reverse;
     align-items: center;
 
     width: 200px;
