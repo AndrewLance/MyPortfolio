@@ -8,11 +8,6 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     height: 450px;
     opacity: .9;
     background: url("img/header-bg.jpg") 0 0 transparent fixed;
@@ -20,6 +15,13 @@ header {
     padding: 2.6rem 5rem;
 
     position: relative;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header::after,
@@ -180,6 +182,12 @@ figure:hover img {
 }
 .social a {
     width: 10px;
+    margin: 12px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
 }
 
 .footer-user {
