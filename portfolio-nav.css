@@ -1,16 +1,28 @@
 .portfolio-menu {
+    all: unset;
+
     display: flex;
+
+    height: 38px;
 
     position: fixed;
     bottom: 0;
-    left: -240px;
+    left: -280px;
     z-index: 100;
     transition: left .3s ease-in-out;
 }
 
+.portfolio-menu p {
+    all: unset;
+
+    font-family: sans-serif !important;
+}
+
 .portfolio-menu-item {
+    all: unset;
+
     padding: 7px 10px;
-    width: 200px;
+    width: 160px;
     line-height: 20px;
     height: 32px;
     opacity: .4;
@@ -22,15 +34,21 @@
 }
 
 .portfolio-menu-item:hover {
-    color: #00ddff !important;
+    color: #00ddff;
     opacity: .7;
 }
 
-body:hover .portfolio-menu {
+html:hover .portfolio-menu {
     left: 0;
 }
 
 .portfolio-description {
+    all: unset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: relative;
 
     background-color: transparent;
@@ -43,10 +61,7 @@ body:hover .portfolio-menu {
 .portfolio-description img {
     width: 20px;
     height: 20px;
-}
-
-.portfolio-hidden {
-    display: flex;
+    opacity: .7;
 }
 
 .portfolio-description .portfolio-menu-item {
@@ -56,10 +71,13 @@ body:hover .portfolio-menu {
 
 .portfolio-description p {
     padding: 7px 10px;
+    font-size: 1.2rem;
     line-height: 20px;
 }
 
-.portfolio-description .portfolio-hidden {
+.portfolio-hidden {
+    display: flex;
+
     margin: 0 5px;
     width: 0;
 
@@ -67,10 +85,7 @@ body:hover .portfolio-menu {
     overflow: hidden;
 
     position: absolute;
-    top: 100%;
-
-    transition: top .3s ease-in-out,
-        width .5s ease-in-out;
+    bottom: 0;
 }
 
 .portfolio-description:hover {
