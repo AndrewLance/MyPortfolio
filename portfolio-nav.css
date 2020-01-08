@@ -1,33 +1,27 @@
+a {
+    text-decoration: none;
+}
+
 .portfolio-menu {
-    all: unset;
-
     display: flex;
+    font-size: 16px;
 
-    height: 38px;
+    height: 30px;
 
     position: fixed;
     bottom: 0;
-    left: -280px;
-    z-index: 100;
+    left: -200px;
+
     transition: left .3s ease-in-out;
 }
 
-.portfolio-menu p {
-    all: unset;
-
-    font-family: sans-serif !important;
-}
-
 .portfolio-menu-item {
-    all: unset;
-
-    padding: 7px 10px;
-    width: 160px;
-    line-height: 20px;
-    height: 32px;
+    text-align: center;
+    padding: 5px;
+    width: 180px;
+    overflow: hidden;
     opacity: .4;
     color: white;
-    font-size: 1.2rem;
     background-color: black;
     transition: color .15s linear,
         opacity .15s linear;
@@ -43,8 +37,6 @@ html:hover .portfolio-menu {
 }
 
 .portfolio-description {
-    all: unset;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,18 +53,10 @@ html:hover .portfolio-menu {
 .portfolio-description img {
     width: 20px;
     height: 20px;
-    opacity: .7;
 }
 
 .portfolio-description .portfolio-menu-item {
     opacity: 1;
-    width: unset;
-}
-
-.portfolio-description p {
-    padding: 7px 10px;
-    font-size: 1.2rem;
-    line-height: 20px;
 }
 
 .portfolio-hidden {
