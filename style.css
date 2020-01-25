@@ -1,6 +1,6 @@
 html {
     font-size: 14px;
-    min-width: 800px;
+    min-width: 840px;
 }
 
 body {
@@ -11,7 +11,7 @@ header {
     height: 450px;
     opacity: .9;
     background: url("img/header-bg.jpg") 0 0 transparent fixed;
-    background-size: 100%;
+    background-size: 1900px;
     padding: 2.6rem 5rem;
 
     position: relative;
@@ -44,11 +44,10 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    height: 150px;
     opacity: .9;
     background: url("img/footer-bg.jpg") 0 0 transparent fixed;
     background-position: bottom;
-    background-size: 100%;
+    background-size: 1900px;
     padding: 2.6rem 5rem;
 
     position: relative;
@@ -62,6 +61,7 @@ footer:after {
 h1 {
     color: white;
     font-size: 3.5rem;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 10px;
 }
@@ -89,7 +89,7 @@ section {
     margin-top: 50px;
 }
 
-a {
+.item {
     width: calc(33.3% - 20px);
     margin: 10px;
 }
@@ -174,15 +174,31 @@ figure:hover img {
 
 .social {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
 
     width: 200px;
     margin: 10px;
 }
+
+.social a:last-child {
+    padding-right: 0;
+}
+
+.social a:first-child {
+    padding-left: 0;
+}
+
 .social a {
-    width: 10px;
-    margin: 12px;
+    box-sizing: content-box;
+    opacity: .7;
+    width: 25px;
+    padding: 6px;
+    transition: opacity .15s linear;
+}
+
+.social a:hover {
+    opacity: 1;
 }
 
 .social img {
@@ -199,11 +215,12 @@ figure:hover img {
     margin-right: 20px;
 }
 
-footer a {
+footer > a {
     text-align: center;
     width: 200px;
     margin: 10px;
 }
+
 button {
     width: 100%;
 }

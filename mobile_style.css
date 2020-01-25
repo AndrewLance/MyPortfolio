@@ -1,0 +1,53 @@
+html {
+    min-width: unset;
+}
+
+header {
+    background-size: 1024px;
+    height: 140px;
+    padding: 0 2rem;
+}
+
+header .centered {
+    margin: 0;
+}
+
+.p-large {
+    font-size: 1.2rem;
+}
+
+.ava,
+.footer-user {
+    display: none
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0 0 3.8rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-size: 1024px;
+    padding: 0 2rem;
+}
+
+footer > a {
+    width: calc(100vw - 5.2rem);
+}
+
+.figure-container {
+    display: block;
+    flex-flow: unset;
+}
+
+.social {
+    justify-content: center;
+}
