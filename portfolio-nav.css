@@ -18,7 +18,6 @@ a {
 .portfolio-menu-item {
     text-align: center;
     padding: 5px;
-    width: 180px;
     overflow: hidden;
     opacity: .4;
     color: white;
@@ -27,7 +26,11 @@ a {
         opacity .15s linear;
 }
 
-.portfolio-menu-item:hover {
+.strict-w {
+    width: 180px;
+}
+
+a.portfolio-menu-item:hover {
     color: #00ddff;
     opacity: .7;
 }
@@ -84,4 +87,10 @@ html:hover .portfolio-menu {
 
 .portfolio-description:hover img {
     display: none;
+}
+
+p.portfolio-menu-item {
+    color: #55ddff;
+    line-height: 1rem;
+    margin: 0;
 }
